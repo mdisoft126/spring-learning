@@ -12,4 +12,9 @@
         
 <!-- 	<bean id="vehicle" class="com.marcind.demospring.Bike"></bean> -->
 	
+<!-- 		<bean id="tyre" class="com.marcind.demospring.Tyre"> -->
+<!-- 			<property name="brand" value="MRF"></property> -->
+<!-- 			<constructor-arg value="MRF"></constructor-arg> -->
+<!-- 		</bean> -->
+		
 </beans>
