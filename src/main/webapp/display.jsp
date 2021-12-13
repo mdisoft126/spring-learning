@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	I'am here
+	Result is : <%= request.getAttribute("result") %>
 
 </body>
 </html>
