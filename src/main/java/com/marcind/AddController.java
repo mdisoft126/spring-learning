@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.marcind.service.AddService;
+
 @Controller
 public class AddController 
 {
@@ -15,7 +17,10 @@ public class AddController
 	{
 		int i = Integer.parseInt(request.getParameter("t1"));
 		int j = Integer.parseInt(request.getParameter("t2"));
-		int k = i + j;
+//		int k = i + j;
+		
+		AddService as = new AddService();
+		int k = as.add(i, j);
 		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("display.jsp");
